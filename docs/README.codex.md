@@ -30,6 +30,7 @@ ln -s ~/.codex/figma-spec-to-ui-1to1 ~/.agents/skills/figma-spec-to-ui-1to1
 - Codex 使用根目录中的 `SKILL.md` 进行技能发现
 - `references/` 提供输入模板、统一提示词模板和交付前自检清单
 - `examples/` 提供输入与输出示例
+- 重要提醒：当 AI 真正启用这个 skill 后，通常会显著增加 token 消耗，尤其是在多 node-id、多画板、多断点、多状态稿场景下
 
 ## 推荐触发方式
 
