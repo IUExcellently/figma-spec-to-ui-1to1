@@ -29,6 +29,7 @@ Kiro 会读取根目录中的 `POWER.md`，并按其中的关键词与 steering 
 - `steering/`：按工作流拆分的指导文件
 - `references/`：平台无关的模板与检查清单
 - 重要提醒：当 AI 真正启用这个 power 后，通常会显著增加 token 消耗，尤其是在多 node-id、多画板、多断点、多状态稿场景下
+- 若你希望 AI 先生成 `create.md` 级详细文档，再继续写代码，优先直接使用 `references/create-doc-prompt-template.md`
 
 ## 激活场景
 

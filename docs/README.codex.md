@@ -31,6 +31,7 @@ ln -s ~/.codex/figma-spec-to-ui-1to1 ~/.agents/skills/figma-spec-to-ui-1to1
 - `references/` 提供输入模板、统一提示词模板和交付前自检清单
 - `examples/` 提供输入与输出示例
 - 重要提醒：当 AI 真正启用这个 skill 后，通常会显著增加 token 消耗，尤其是在多 node-id、多画板、多断点、多状态稿场景下
+- 若你希望 AI 先生成 `create.md` 级详细文档，再继续写代码，优先直接使用 `references/create-doc-prompt-template.md`
 
 ## 推荐触发方式
 
