@@ -93,7 +93,7 @@ Fetch and follow instructions from https://raw.githubusercontent.com/IUExcellent
 - `docs/README.kiro.md`：Kiro 平台说明
 - `references/figma-input-template.md`：用于整理 Figma 输入材料
 - `references/prompt-template.md`：给 Codex、Kiro 等工具复用的统一提示词模板
-- `references/create-doc-prompt-template.md`：用于触发“先生成 create.md 级详细设计文档，再生成代码”的输入模板
+- `references/create-doc-prompt-template.md`：用于触发“先生成 create.md 级详细设计文档，再生成代码”的输入模板，内含项目实现基线、宽度适配与组件内部间距适配要求
 - `references/development-checklist.md`：代码交付前的高保真自检清单
 - `steering/`：Kiro power 按工作流拆分的指导文件
 - `examples/example-input.md`：示例输入
@@ -108,8 +108,9 @@ Fetch and follow instructions from https://raw.githubusercontent.com/IUExcellent
 1. 按 `docs/README.codex.md` 或 `.codex/INSTALL.md` 中的步骤安装。
 2. 在任务中明确要求使用 `figma-spec-to-ui-1to1`。
 3. 将 Figma 链接、node-id、页面结构、补充规则等信息一起提供给 Codex。
-4. 优先使用 `references/figma-input-template.md` 整理输入，避免信息缺失。
+4. 优先使用 `references/figma-input-template.md` 整理输入，尤其补齐全局 CSS、UI 框架、自定义主题包、断点与栅格系统等项目实现基线。
 5. 如果你希望 AI 先生成 `create.md` 级详细文档，再继续写代码，优先直接复制 `references/create-doc-prompt-template.md`。
+6. 如果你不希望 AI 主动修改公共组件或全局 CSS，请在输入里明确写“不允许修改公共组件 / 公共样式 / 全局 CSS”。
 
 可直接参考下面这类触发方式：
 

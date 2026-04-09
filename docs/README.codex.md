@@ -32,6 +32,7 @@ ln -s ~/.codex/figma-spec-to-ui-1to1 ~/.agents/skills/figma-spec-to-ui-1to1
 - `examples/` 提供输入与输出示例
 - 重要提醒：当 AI 真正启用这个 skill 后，通常会显著增加 token 消耗，尤其是在多 node-id、多画板、多断点、多状态稿场景下
 - 若你希望 AI 先生成 `create.md` 级详细文档，再继续写代码，优先直接使用 `references/create-doc-prompt-template.md`
+- 若项目已经引入全局 CSS、UI 框架、自定义主题包、断点容器或栅格系统，建议在输入时一并补齐，让 AI 先按项目实现基线判断宽度与内部间距策略
 
 ## 推荐触发方式
 
